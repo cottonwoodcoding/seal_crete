@@ -35,3 +35,15 @@
 .form-user {
   max-width: 450px;
 }
+
+@font-face {
+  font-family: 'depressionist';
+  src:url('depressionist.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: "depressionist"
+}
+

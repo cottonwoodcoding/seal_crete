@@ -1,3 +1,23 @@
-# Place all the behaviors and hooks related to the matching controller here.
-# All this logic will automatically be available in application.js.
-# You can use CoffeeScript in this file: http://coffeescript.org/
+jQuery(document).ready ($) ->
+
+  # instantiate the accordion
+  $("#example1").accordionSlider
+    width: screen.width
+    height: screen.height
+    startPanel: 4
+    responsiveMode: "custom"
+    openedPanelSize: "max"
+    maxOpenedPanelSize: "80%"
+    visiblePanels: 5
+    closePanelsOnMouseOut: false
+
+  $(window).resize ->
+    $("#example1").accordionSlider
+      width: screen.width
+      height: screen.height
+      startPanel: 4
+      responsiveMode: "custom"
+      openedPanelSize: "max"
+      maxOpenedPanelSize: "80%"
+      visiblePanels: 5
+      closePanelsOnMouseOut: false
